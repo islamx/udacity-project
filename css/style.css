@@ -63,7 +63,6 @@ img {
 }
 h2 {
   font-size: 1rem;
-  color: #7b7b7b;
 }
 .d-flex {
   display: flex;
@@ -77,13 +76,29 @@ h2 {
 }
 /* hero */
 .hero {
-  height: 200px;
-  padding: 1rem 0 0;
-  margin-bottom: 1rem;
+  background: url('https://placeimg.com/1200/400/tech') no-repeat;
+  height: 400px;
+  margin: 1rem auto;
   border-bottom: 1px solid #dedede;
+  position: relative;
+  color: #fff;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  background: #4d1a908f;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
 .hero h2 {
   margin-top: .7rem;
+}
+.hero .content {
+  padding: 4rem;
+  position: relative;
+  z-index: 2;
 }
 .call-me {
   padding: 1rem 1rem .7rem;
@@ -93,15 +108,13 @@ h2 {
   color: #fff;
   background: #49c3ca;
   transition: .3s ease-in-out all;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 .call-me:hover {
   background: #ec3769;
 }
 /* latest projects */
 #latest-projects h1 {
-  margin:3rem 0 1.5rem;
+  margin:1.5rem 0;
 }
 #latest-projects .project {
   margin: 0 15px;
